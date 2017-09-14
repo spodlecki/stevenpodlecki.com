@@ -10,6 +10,7 @@ export class Location extends Component {
       <div id="location">
         <div className="">
           <iframe
+            title="Location"
             width="100%"
             height="550"
             frameBorder="0"

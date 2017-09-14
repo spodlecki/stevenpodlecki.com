@@ -33,8 +33,6 @@ function simpleFormat(text) {
 
 export class About extends Component {
   render() {
-    let scrumWiki = 'https://en.wikipedia.org/wiki/Scrum_(software_development)';
-
     let who = `My passion for writing code started when I was 14 years old.
                I started writing code in mIRC Scripting, qBasic, and a little Visual Basic.
                Anything I wrote, it was to simply make my life a little easier.
@@ -70,16 +68,16 @@ export class About extends Component {
             <div className="col-md-3">
               <div className="cloud">{tagCloud()}</div>
               <div className="external-links">
-                <a href={this.props.github_url} target="_blank">
+                <a href={this.props.github_url} target="_blank" rel="noopener">
                   <i className="fa fa-github"></i>
                 </a>
-                <a href={this.props.linkedin_url} target="_blank">
+                <a href={this.props.linkedin_url} target="_blank" rel="noopener">
                   <i className="fa fa-linkedin-square"></i>
                 </a>
                 <a href={this.props.email}>
                   <i className="fa fa-envelope"></i>
                 </a>
-                <a href={this.props.resume_url} target="_blank">
+                <a href={this.props.resume_url} target="_blank" rel="noopener">
                   <i className="fa fa-file-pdf-o"></i>
                 </a>
               </div>

@@ -1,7 +1,8 @@
 const path              = require('path')
 const webpack           = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const OptimizeCssPlugin = require('optimize-css-assets-webpack-plugin');
+const OptimizeCssPlugin = require('optimize-css-assets-webpack-plugin')
+const CompressionPlugin = require('compression-webpack-plugin')
 
 const extract           = new ExtractTextPlugin('spodlecki.css',
                                                 { allChunks: true })
@@ -36,6 +37,13 @@ module.exports = {
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
       }
+    }),
+    new CompressionPlugin({
+      asset: "[path].gz[query]",
+      algorithm: "gzip",
+      test: /\.js$|\.css$|\.html$/,
+      threshold: 10240,
+      minRatio: 0.8
     })
   ],
 
