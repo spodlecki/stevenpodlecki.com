@@ -8,7 +8,7 @@ export class Location extends Component {
 
     return (
       <div id="location">
-        <div className="">
+        <div>
           <iframe
             title="Location"
             width="100%"

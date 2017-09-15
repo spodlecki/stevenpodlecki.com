@@ -7,6 +7,7 @@ import { Introduction } from './components/Introduction'
 import { About } from './components/About'
 import { Skills } from './components/Skills'
 import { Location } from './components/Location'
+import { Footer } from './components/Footer'
 
 let Social = {
   github_url: 'https://github.com/spodlecki',
@@ -15,16 +16,13 @@ let Social = {
   resume_url: '/public/StevenPaulPodlecki.pdf'
 }
 
-
 ReactDOM.render(
   <div>
     <Introduction {...Social} />
     <About {...Social} />
     <Skills />
     <Location />
-    <div className="text-muted text-center">
-      &copy; 2017 Steven Podlecki. Est. 1986
-    </div>
+    <Footer />
   </div>,
   document.getElementById('spodlecki')
 );
