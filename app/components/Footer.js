@@ -7,7 +7,7 @@ const ExternalLink = (params) => {
 
 export class Footer extends Component {
   render() {
-    let links = () => {
+    const links = () => {
       return (
         <span>
           <ExternalLink url="https://github.com/spodlecki/stevenpodlecki.com" label="This source" />,&nbsp;

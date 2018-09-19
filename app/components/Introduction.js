@@ -8,8 +8,8 @@ export class Introduction extends Component {
         <div className="overlay"></div>
         <div className="container text-center">
           <div className="pic"></div>
-          <h1>Steven Podlecki</h1>
-          <p className="h4">Sr. Full Stack Rails Engineer</p>
+          <h1>Steven Paul Podlecki</h1>
+          <p className="h4">Sr. Full Stack Rails Engineer / Certified SCRUM Master</p>
           <div className="external-links">
             <a href={this.props.github_url} target="_blank" rel="noopener">
               <i className="fa fa-github"></i>

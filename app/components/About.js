@@ -13,7 +13,7 @@ function shuffle(array) {
 }
 
 function tagCloud() {
-  let tags = ['HTML5', 'CSS/3', 'SASS', 'Photoshop', 'SSH', 'RSync',
+  const tags = ['HTML5', 'CSS/3', 'SASS', 'Photoshop', 'SSH', 'RSync',
               'FFMPEG', 'ImageMagick', 'Bootstrap', 'Google Analytics',
               'JWPlayer', 'jQuery', 'VideoJS', 'HLS Streaming', 'CDN Hosting',
               'ECMAScript6', 'JavaScript', 'Rails', 'Ruby', 'ElasticSearch',
@@ -27,39 +27,39 @@ function tagCloud() {
 }
 
 function simpleFormat(text) {
-  let paragraphs = text.split("\n\n");
+  const paragraphs = text.split("\n\n");
   return paragraphs.map((string, index) => <p key={index.toString()}>{string.trim()}</p>);
 }
 
 export class About extends Component {
   render() {
-    let who = `My passion for writing code started when I was 14 years old.
-               I started writing code in mIRC Scripting, qBasic, and a little Visual Basic.
-               Anything I wrote, it was to simply make my life a little easier.
-               If I found a task at work to be repetitive, I'd write a script to do
-               it for me.
+    const who = `My passion for writing code started when I was 14 years old.
+                 I started writing code in mIRC Scripting, qBasic, and a little Visual Basic.
+                 Anything I wrote, it was to simply make my life a little easier.
+                 If I found a task at work to be repetitive, I'd write a script to do
+                 it for me.
 
-               Soon I realized, I love writing code! After a little bit of research,
-               I felt Web Development was where I wanted my career path to land.
+                 Soon I realized, I love writing code! After a little bit of research,
+                 I felt Web Development was where I wanted my career path to land.
 
-               Aside from being a code ninja, I enjoy the outdoors. If I am not coding,
-               I'll be either gaming on consoles, hunting, fishing, playing with the kids,
-               or binge watching a TV Show.`;
+                 Aside from being a code ninja, I enjoy the outdoors. If I am not coding,
+                 I'll be either gaming on consoles, hunting, fishing, playing with the kids,
+                 or binge watching a TV Show.`;
 
-    let what = `My primary focus is normally Front-end work (JS, CSS, HTML5),
-                but I am well versed in the entire stack. On a day to day basis
-                I am using Mac and a standard Rails stack to do my Wizardry. More often than not,
-                I am working on JavaScript modules and reusable tools for company properties.
-                Recently, we have had an opportunity to start migrating our existing JS Tools to ES6.
+    const what = `My primary focus is normally Front-end work (JS, CSS, HTML5),
+                  but I am well versed in the entire stack. On a day to day basis
+                  I am using Mac and a standard Rails stack to do my Wizardry. More often than not,
+                  I am working on JavaScript modules and reusable tools for company properties.
+                  Recently, we have had an opportunity to start migrating our existing JS Tools to ES6.
 
-                Aside from being one of the Lead Rails Engineers on the team,
-                I am also the Scrum Master in our Agile team. As a SM, I am responsible
-                for helping the team simply get better and help identify areas of
-                improvement.`
+                  Aside from being one of the Lead Rails Engineers on the team,
+                  I am also the Scrum Master in our Agile team. As a SM, I am responsible
+                  for helping the team simply get better and help identify areas of
+                  improvement.`
 
-    let how = `Working in 2 week cycles (Sprints), we follow Scrum as best
-               as we can by hosting Daily Stand Ups, Backlog grooming sessions,
-               Sprint Reviews, and most importantly -- Sprint Retrospectives.`
+    const how = `Working in 2 week cycles (Sprints), we follow Scrum as best
+                 as we can by hosting Daily Stand Ups, Backlog grooming sessions,
+                 Sprint Reviews, and most importantly -- Sprint Retrospectives.`
 
     return (
       <div id="about">

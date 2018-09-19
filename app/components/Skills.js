@@ -2,7 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 
 const Skill = (params) => {
-  let bar = (level) => {
+  const bar = (level) => {
     level = parseInt(level)
     if (level >= 97) {
       return 'primary'
@@ -17,7 +17,7 @@ const Skill = (params) => {
     }
   }
 
-  let barCssNames = `progress-bar progress-bar-${bar(params.level)} progress-bar-striped`
+  const barCssNames = `progress-bar progress-bar-${bar(params.level)} progress-bar-striped`
 
   return (
     <div className="skill">
@@ -53,13 +53,13 @@ export class Skills extends Component {
               </p>
               <div className="subset">
                 <Skill name="CoffeeScript" level="99" />
-                <Skill name="Webpack" level="85" />
+                <Skill name="Webpack" level="90" />
                 <Skill name="jQuery" level="95" />
                 <Skill name="Native JS" level="85" />
                 <Skill name="Underscore" level="95" />
-                <Skill name="React" level="90" />
+                <Skill name="React" level="95" />
                 <Skill name="Backbone" level="100" />
-                <Skill name="ES6" level="80" />
+                <Skill name="ES6" level="90" />
               </div>
 
               <p className="h3">
@@ -102,7 +102,7 @@ export class Skills extends Component {
                 <Skill name="Adobe Photoshop" level="98" />
                 <Skill name="Web Server Layer" level="82" />
                 <Skill name="MySQL Database" level="88" />
-                <Skill name="Scrum Master" level="90" />
+                <Skill name="Certified SCRUM Master" level="95" />
                 <Skill name="Data Analytics" level="98" />
                 <Skill name="Split Testing" level="95" />
                 <Skill name="ElasticSearch" level="92" />
